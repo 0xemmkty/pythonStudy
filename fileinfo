@@ -27,7 +27,7 @@ try:
     with open(file_name) as f:
         # Source: https://stackoverflow.com/a/1019572
         count = sum(1 for line in f)
-        f.seek(0)
+        f.seek(0) #set the pointer to the beginning
         t_char = sum([len(line) for line in f])
 except FileNotFoundError as e:
     print(e)
