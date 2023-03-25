@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<head>
+    <meta charset = 'UTF-8'>
+</head>
+
+<body>
+    today is {{var}}.
+    today has 
+    {% for data in list %}
+        {{ data }}
+    {% endfor %}
+
+    <br/>
+    <table border = '1'>
+        {% for key, value in task.items() %}
+            <tr>
+                <td>{{key}}</td>
+                <td>{{value}}</td>
+            </tr>
+        {% endfor %}
+    </table>        
+</body>
+</html>
